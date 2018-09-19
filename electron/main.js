@@ -18,6 +18,8 @@ function createWindow () {
 	
 	//var dblite = require('dblite'),
 	//db = dblite('banco/servidor.db');
+	//var sqlite3 = require('sqlite3').verbose();
+	//var db = new sqlite3.Database('banco/servidor.db');
 	//electron.remote.dialog.showMessageBox({title: 'Algo', message: 'Hello'})
 	/*db.query('select * from alunos limit 100', function(err, rows) {
 		  if(err) {

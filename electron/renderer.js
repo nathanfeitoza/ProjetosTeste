@@ -5,11 +5,11 @@ var electron = require('electron')
 console.log(electron);
 document.querySelector("#teste").addEventListener('click',function(){
 	console.log('Clicou-me');
-	electron.remote.dialog.showMessageBox({title: 'Algo', message: 'Hello'})
-	/*var dblite = electron.remote.require('dblite');
-	db = dblite('banco/servidor.db');
 	//electron.remote.dialog.showMessageBox({title: 'Algo', message: 'Hello'})
-	db.query('select * from alunos limit 100', function(err, rows) {
+	var dblite = electron.remote.require('dblite');
+	db = dblite('banco/banco_teste.db');
+	//electron.remote.dialog.showMessageBox({title: 'Algo', message: 'Hello'})
+	db.query('select * from employees limit 100', function(err, rows) {
 		  if(err) {
 			  console.log(err);
 			  //return erro('Erro no banco de dados: '+JSON.stringify(err));
@@ -20,5 +20,5 @@ document.querySelector("#teste").addEventListener('click',function(){
 			  //return erro('Chave de API inválida');
 		  }
 		  console.log(rows);
-	});*/
+	});
 })
